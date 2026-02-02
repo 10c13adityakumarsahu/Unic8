@@ -264,3 +264,8 @@ export async function rateMeetingService(meetingId, formData) {
   return data;
 }
 
+export async function getStreamToken(userId) {
+  const { data } = await axiosInstance.post("/api/video/token", { userId });
+  return data;
+}
+

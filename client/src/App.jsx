@@ -18,6 +18,7 @@ import AdminDashboardPage from "./pages/admin";
 import SetCredentialsPage from "./pages/auth/set-credentials";
 import StudentMentorsPage from "./pages/student/mentors";
 import StudentMeetingsPage from "./pages/student/meetings";
+import VideoCallPage from "./pages/video-call";
 
 
 function App() {
@@ -102,6 +103,7 @@ function App() {
         <Route path="profile" element={<StudentProfilePage />} />
         <Route path="mentors" element={<StudentMentorsPage />} />
         <Route path="student-meetings" element={<StudentMeetingsPage />} />
+        <Route path="video-call/:callId" element={<VideoCallPage />} />
       </Route>
       <Route path="*" element={<NotFoundPage />} />
     </Routes>

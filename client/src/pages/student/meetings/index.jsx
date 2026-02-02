@@ -142,9 +142,9 @@ function StudentMeetingsPage() {
                                         </div>
                                         <div className="flex gap-2">
                                             <div className={`px-6 py-3 rounded-2xl text-xs font-black uppercase tracking-widest flex items-center gap-2 ${meeting.status === 'pending' ? 'bg-amber-50 text-amber-600 border border-amber-100' :
-                                                    meeting.status === 'accepted' ? 'bg-emerald-50 text-emerald-600 border border-emerald-100' :
-                                                        meeting.status === 'reschedule_requested' ? 'bg-blue-50 text-blue-600 border border-blue-100' :
-                                                            'bg-rose-50 text-rose-600 border border-rose-100'
+                                                meeting.status === 'accepted' ? 'bg-emerald-50 text-emerald-600 border border-emerald-100' :
+                                                    meeting.status === 'reschedule_requested' ? 'bg-blue-50 text-blue-600 border border-blue-100' :
+                                                        'bg-rose-50 text-rose-600 border border-rose-100'
                                                 }`}>
                                                 {meeting.status.replace('_', ' ')}
                                             </div>
@@ -174,7 +174,7 @@ function StudentMeetingsPage() {
                                         {meeting.status === 'accepted' && meeting.paymentStatus === 'paid' && (
                                             <>
                                                 <Button
-                                                    onClick={() => window.open(meeting.meetingLink, '_blank')}
+                                                    onClick={() => window.location.href = `/video-call/${meeting._id}`}
                                                     className="h-14 px-10 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-black flex items-center gap-2"
                                                 >
                                                     <Video className="h-4 w-4" /> Join Now

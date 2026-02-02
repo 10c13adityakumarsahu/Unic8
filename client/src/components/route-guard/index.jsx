@@ -50,7 +50,8 @@ function RouteGuard({ authenticated, user, element }) {
   if (
     authenticated &&
     user.role === "instructor" &&
-    !location.pathname.includes("instructor")
+    !location.pathname.includes("instructor") &&
+    !location.pathname.includes("video-call")
   ) {
     return <Navigate to="/instructor" />;
   }
@@ -60,7 +61,8 @@ function RouteGuard({ authenticated, user, element }) {
   if (
     authenticated &&
     user.role === "admin" &&
-    !location.pathname.includes("admin")
+    !location.pathname.includes("admin") &&
+    !location.pathname.includes("video-call")
   ) {
     return <Navigate to="/admin" />;
   }
