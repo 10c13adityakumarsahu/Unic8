@@ -2,7 +2,7 @@
 
 A robust and modern Learning Management System (LMS) built with the MERN stack (MongoDB, Express, React, Node.js). This platform enables instructors to create and manage courses while providing students with an intuitive interface to learn, track progress, and interact with course content.
 
-## 🚀 Features
+## Features
 
 *   **User Authentication**: Secure signup and login for students and instructors (JWT-based).
 *   **Course Management**: Instructors can create, update, and manage course content, including media uploads.
@@ -12,7 +12,7 @@ A robust and modern Learning Management System (LMS) built with the MERN stack (
 *   **Responsive Design**: Built with Tailwind CSS and Radix UI for a seamless experience across devices.
 *   **Security**: Implements best practices including rate limiting, data sanitization, and secure headers.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Client (Frontend)
 *   **Framework**: React (Vite)
@@ -28,7 +28,7 @@ A robust and modern Learning Management System (LMS) built with the MERN stack (
 *   **File Storage**: Cloudinary (via Multer)
 *   **Payments**: PayPal REST SDK
 
-## 🏁 Getting Started
+## Getting Started
 
 ### Prerequisites
 *   Node.js (v14+ recommended)
@@ -85,7 +85,7 @@ A robust and modern Learning Management System (LMS) built with the MERN stack (
 4.  **Access the Application:**
     Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal).
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 LMS/
@@ -99,5 +99,5 @@ LMS/
 └── README.md       # Project documentation
 ```
 
-## 📄 License
+## License
 This project is licensed under the ISC License.
