@@ -9,4 +9,14 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server: {
+    proxy: {
+      "/auth": "http://localhost:5001",
+      "/media": "http://localhost:5001",
+      "/instructor": "http://localhost:5001",
+      "/student": "http://localhost:5001",
+      "/admin": "http://localhost:5001",
+      "/api": "http://localhost:5001",
+    },
+  },
 });
